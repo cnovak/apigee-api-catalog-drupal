@@ -95,13 +95,14 @@ class SmartDocsFormatter extends FileFormatterBase implements ContainerFactoryPl
    * {@inheritdoc}
    */
   public function view(FieldItemListInterface $items, $langcode = NULL) {
+    global $base_url;
     $elements = parent::view($items, $langcode);
 
     // Add base tag for SmartDocs Angular application.
     $xuacompatible = [
       '#tag' => 'base',
       '#attributes' => [
-        'href' => '/',
+        'href' => $base_url,
       ],
     ];
     $elements['#attached']['html_head'][] = [$xuacompatible, 'base-href'];
