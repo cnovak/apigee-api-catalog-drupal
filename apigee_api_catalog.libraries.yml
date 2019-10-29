@@ -6,14 +6,14 @@ apigee_api_catalog.smartdocs:
     gpl-compatible: false
   css:
     component:
-      https://fonts.googleapis.com/icon?family=Material+Icons: { type: external }
-      https://www.gstatic.com/smartdocs/1.0.1/styles.css: { type: external }
+      css/material.css: {}
+      css/smartdocs.css: {}
   js:
-    https://www.gstatic.com/smartdocs/1.0.1/es2015-polyfills.js: { type: external, minified: true }
-    https://www.gstatic.com/smartdocs/1.0.1/main.js: { type: external, minified: true }
-    https://www.gstatic.com/smartdocs/1.0.1/polyfills.js: { type: external, minified: true }
-    https://www.gstatic.com/smartdocs/1.0.1/runtime.js: { type: external, minified: true }
-    https://www.gstatic.com/smartdocs/1.0.1/vendor.js: { type: external, minified: true }
+    js/smartdocs/es2015-polyfills.js: { minified: true }
+    js/smartdocs/main.js: { minified: true }
+    js/smartdocs/polyfills.js: { minified: true }
+    js/smartdocs/runtime.js: { minified: true }
+    js/smartdocs/vendor.js: { minified: true }
 
 # Integration of SmartDocs Angular application with Drupal,
 # passes the OpenAPI spec URL to the SmartDocs ng app.
@@ -33,4 +33,4 @@ apigee_api_catalog.js_yaml:
     url: https://github.com/nodeca/js-yaml/blob/master/LICENSE
     gpl-compatible: true
   js:
-    https://cdn.jsdelivr.net/npm/js-yaml@3.13.1/dist/js-yaml.min.js: { type: external, minified: true }
+    js/js-yaml/js-yaml.min.js: {minified: true }
